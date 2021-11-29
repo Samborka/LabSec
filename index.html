@@ -13,16 +13,23 @@
   <body>
     <main>
       <div>
-        <p class="title">
-          <label>Digite o texto para ser encriptado (SHA-256): </label>
-        </p>
-        <input type="text" id="text" placeholder="Digite o texto" />
-        <p class="title">
-          <label
-            >Digite uma frase secreta para gerar a chave RSA (1024 bits):
-          </label>
-        </p>
-        <input type="text" id="secretText" placeholder="Digite a frase" />
+        <form>
+          <p class="title">
+            <label>Digite o texto para ser encriptado (SHA-256): </label>
+          </p>
+          <input type="text" id="text" placeholder="Digite o texto" required />
+          <p class="title">
+            <label
+              >Digite uma frase secreta para gerar a chave RSA (1024 bits):
+            </label>
+          </p>
+          <input
+            type="text"
+            id="secretText"
+            placeholder="Digite a frase"
+            required
+          />
+        </form>
         <br />
         <button class="encrypt-button" onclick="encrypt()">Encriptar</button>
       </div>
