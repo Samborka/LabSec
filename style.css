@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root {
+  --background-color: #d4fffc;
+  --response-color: #629c98;
+  --letter-color: #9c491f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+body {
+  background-color: var(--background-color);
+}
+p {
+  color: var(--letter-color);
+}
+main {
+  text-align: center;
+}
+.title {
+  color: var(--letter-color);
+  padding: 10px;
+}
+.encrypt-button {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: var(--background-color);
+  color: var(--letter-color);
+  font-weight: 700;
+}
+.encrypt-button:hover {
+  background-color: #e89266;
+  cursor: pointer;
+}
+
+.response {
+  margin-top: 10px !important;
+  background-color: var(--response-color);
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+  width: 900px;
+  margin: auto;
+  color: var(--letter-color);
+}
+.response-area {
+  width: 900px;
+}
+#text {
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: var(--background-color);
+}
+#secretText {
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: var(--background-color);
+}
+#teste {
+  width: 900px;
+  word-wrap: break-word;
+}

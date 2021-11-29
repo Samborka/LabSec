@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio LabSec</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="biblioteca-SHA256/sjcl.js"></script>
+    <script src="biblioteca-RSA/cryptico.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <p class="title">
+          <label>Digite o texto para ser encriptado (SHA-256): </label>
+        </p>
+        <input type="text" id="text" placeholder="Digite o texto" />
+        <p class="title">
+          <label
+            >Digite uma frase secreta para gerar a chave RSA (1024 bits):
+          </label>
+        </p>
+        <input type="text" id="secretText" placeholder="Digite a frase" />
+        <br />
+        <button class="encrypt-button" onclick="encrypt()">Encriptar</button>
+      </div>
+
+      <div id="response-area"></div>
+    </main>
+  </body>
+</html>
